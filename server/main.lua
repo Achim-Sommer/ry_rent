@@ -1,3 +1,6 @@
+ESX = nil
+TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+
 RegisterServerEvent("ry_rent:pay");
 AddEventHandler("ry_rent:pay", function(amount)
 	local _source = source;
